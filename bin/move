@@ -4,5 +4,6 @@ require_relative '../lib/move.rb'
 board = [" "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
 input = gets.strip
-inpute (board)
+inpute(board)
+
 # Code your CLI Here
