@@ -1,10 +1,17 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-puts "Welcome to Tic Tac Toe!"
-board = [" "," "," "," "," "," "," "," "," "]
-puts "Where would you like to go?"
 
+def move(array, index, value="X")
+  array[index] = value
+  return array
+end
+
+# Code your CLI Here
+
+board = [" "," "," "," "," "," "," "," "," "]
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go?"
 answer = gets.strip
 answer = input_to_index(answer)
 
@@ -18,5 +25,3 @@ def update_array_at_with(array, index, value)
 end
 
 update_array_at_with(board, input, "X")
-
-# Code your CLI Here
