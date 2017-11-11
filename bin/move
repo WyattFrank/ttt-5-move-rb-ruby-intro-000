@@ -5,11 +5,13 @@ puts "Welcome to Tic Tac Toe!"
 board = ["X"," "," "," "," "," "," "," "," "]
 puts "Where would you like to go?"
 
+input = gets.strip
+input = input_to_index input
+
 def update_array_at_with(array, index, value)
   array[index] = value
 end
 
-input = gets.strip
-
+update_array_at_with(board, input, "X")
 
 # Code your CLI Here
