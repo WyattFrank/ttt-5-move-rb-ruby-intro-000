@@ -8,15 +8,14 @@ puts "Where would you like to go?"
 answer = gets.strip
 answer = input_to_index(answer)
 
-def move(board, answer)
+move (board, answer)
+
   display_board(board)
 end
 
 def update_array_at_with(array, index, value)
   array[index] = value
 end
-
-
 
 update_array_at_with(board, input, "X")
 
