@@ -16,3 +16,4 @@ answer = input_to_index(answer)
 
 move(board, answer)
 display_board(board)
+
