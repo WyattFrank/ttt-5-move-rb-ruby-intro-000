@@ -6,16 +6,13 @@ def move(array, index, value="X")
   array[index] = value
   return array
 end
-
 # Code your CLI Here
 
 board = [" "," "," "," "," "," "," "," "," "]
-
 puts "Welcome to Tic Tac Toe!"
 puts "Where would you like to go?"
 answer = gets.strip
 answer = input_to_index(answer)
 
-move (board, answer)
-
+move(board, answer)
 display_board(board)
