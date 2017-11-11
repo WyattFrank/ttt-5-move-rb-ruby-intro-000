@@ -8,8 +8,9 @@ puts "Where would you like to go?"
 input = gets.strip
 input = input_to_index input
 
-def move (array, index, value)
+def move(array, index, value)
   value = "X"
+  
 end
 
 def update_array_at_with(array, index, value)
