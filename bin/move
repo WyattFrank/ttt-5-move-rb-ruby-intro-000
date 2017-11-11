@@ -3,12 +3,12 @@
 require_relative '../lib/move.rb'
 puts "Welcome to Tic Tac Toe!"
 board = ["X"," "," "," "," "," "," "," "," "]
+puts "Where would you like to go?"
+
 def update_array_at_with(array, index, value)
   array[index] = value
 end
 
-update_array_at_with(board, 0, "1")
-puts "Where would you like to go?"
 input = gets.strip
 
 
